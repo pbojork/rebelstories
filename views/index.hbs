@@ -1,2 +1,13 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Home Page</h1>
+
+{{> flash_messages}}
+
+{{#if currentUser}}
+<h3>Welcome back, {{currentUser.userName}}!</H3>
+{{else}}
+
+<h3>Welcome to Rebel Stories!</h3>
+{{!-- <a href="/signup">Sign Up</a>
+<a href="/login">Log In</a> --}}
+
+{{/if}}
