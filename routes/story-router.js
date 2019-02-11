@@ -13,7 +13,6 @@ router.get("/story-add", (req, res, next) => {
   }
 });
 
-// this isn't tested yet cause we don't have the story-form
 router.post("/process-story", (req, res, next) => {
   const {
     name,
@@ -62,8 +61,21 @@ router.get("/my-stories", (req, res, next) => {
     .limit(10)
     .then(storyResults => {
       res.locals.storyArray = storyResults;
-      res.render("profile-views/personal-list.hbs");
+      res.render("story-views/personal-list.hbs");
     })
+    .catch(err => next(err));
+});
+
+// after clicking "read her story"
+router.get("/your-story/:storyId", (req, res, next) => {
+  const { storyId } = req.params;
+
+  Story.findById(storyId)
+    .then(storyDoc => {
+      res.locals.storyItem = storyDoc;
+      res.render("story-views/your-story.hbs");
+    })
+
     .catch(err => next(err));
 });
 

@@ -35,4 +35,7 @@ a:hover {
 label {
   display: block; }
 
+ul {
+  list-style-type: none; }
+
 /*# sourceMappingURL=style.css.map */
