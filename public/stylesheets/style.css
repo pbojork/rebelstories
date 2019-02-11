@@ -29,10 +29,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-right: 0;
-  margin-left: 0; }
+  margin-left: 0;
   color: #00b7ff; }
 
 label {
   display: block; }
+
+ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */

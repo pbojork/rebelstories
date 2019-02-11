@@ -1,13 +1,17 @@
-<h2>My Stories</h2>
+<h1>My Stories</h1>
 
-
-<a href="/room-add">Add a Story</a>
 
 <ul>
   {{#each storyArray}}
   <li>
-    <h3>{{this.name}}</h3>
-    <img src="{{this.pictureUrl}}" />
+    <h4>{{this.name}}</h4>
+    <h5>{{this.profession}}</h5>
+    <h6>{{this.year}}, {{this.country}}</h6>
+    <p>{{this.description}}</p>
+    <img src="{{this.pictureUrl}}" alt="image" />
+    <p>{{this.quote}}</p>
   </li>
   {{/each}}
 </ul>
+
+<a href="/story-add">Add a Story</a>
