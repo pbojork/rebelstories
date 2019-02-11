@@ -105,4 +105,7 @@ app.use("/", index);
 const auth = require("./routes/auth-router.js");
 app.use("/", auth);
 
+const story = require("./routes/story-router.js");
+app.use("/", story);
+
 module.exports = app;

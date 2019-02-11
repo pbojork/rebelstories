@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema(
   {
     // document structure & rules defined here
-    userName: { type: String, required: true, minlength: 2 },
+    userName: { type: String, required: true, minlength: 2, unique: true },
     email: { type: String, required: true, unique: true, match: /^.+@.+\..+$/ },
     encryptedPassword: { type: String, required: true }
   },

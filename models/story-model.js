@@ -15,7 +15,9 @@ const storySchema = new Schema(
     pictureUrl: { type: String },
     year: { type: String },
     country: { type: String, required: true },
-    quote: { type: String, required: true }
+    quote: { type: String, required: true },
+    publisher: { type: Schema.Types.ObjectId, ref: "User", required: true }
+    // user is the string defined in const User = mongoose.model("User, userSchema") in user-model.js
   },
   {
     timestamps: true
