@@ -1,0 +1,14 @@
+<h1>My Stories</h1>
+
+
+<ul>
+  {{#each storyArray}}
+  <li>
+    <h5>{{this.name}}, {{this.profession}} </h5>
+    <a href="/your-story/{{this._id}}">Read her story</a>
+  </li>
+
+  {{/each}}
+</ul>
+
+<a href="/story-add">Add a Story</a>
