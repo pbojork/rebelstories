@@ -1,8 +1,45 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+// .nav-text {
+//   color: #fcf8ec;
+// }
+
 a {
-  color: #00B7FF;
+  color: #fcf8ec;
+}
+
+a:hover {
+  color: #f2ea87;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.menu-nav {
+  text-align: right;
+}
+
+.collapse-btn {
+  border: 1px solid #b5d3de;
+}
+
+.bg-blue {
+  background-color: #233256;
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
 }

@@ -1,17 +1,22 @@
-<h2>Log In</h2>
+{{> nav_links}}
 
-{{> flash_messages}}
+<div class="row">
 
-<form action="/process-login" method="POST">
-  <label>
-    Username:
-    <input type="text" name="userName" placeholder="lovelace" />
-  </label>
+  <h2>Log In</h2>
 
-  <label>
-    Password:
-    <input type="password" name="originalPassword" placeholder="password" />
-  </label>
+  {{> flash_messages}}
 
-  <button>Log In</button>
-</form>
+  <form action="/process-login" method="POST">
+    <label>
+      Username:
+      <input type="text" name="userName" placeholder="lovelace" />
+    </label>
+
+    <label>
+      Password:
+      <input type="password" name="originalPassword" placeholder="password" />
+    </label>
+
+    <button>Log In</button>
+  </form>
+</div>
