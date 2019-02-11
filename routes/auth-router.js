@@ -80,7 +80,7 @@ router.post("/process-login", (req, res, next) => {
       req.logIn(userDoc, () => {
         // req.flash sends feedback message before redirect
         // (it's defined by the "connect-flash" npm package)
-        req.flash("success", "Log in successful! 👍");
+        // req.flash("success", "Log in successful! 👍");
         res.redirect("/");
       });
     })
