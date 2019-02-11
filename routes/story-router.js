@@ -5,7 +5,7 @@ const router = express.Router();
 router.get("/story-add", (req, res, next) => {
   if (req.user) {
     // AUTHORIZATION: only show the form if you are logged-in
-    res.render("profile-views/story-form.hbs");
+    res.render("story-views/story-form.hbs");
   } else {
     // redirect to the login page if you ARE NOT logged-in
     req.flash("error", "You have to be logged-in to add a story!");

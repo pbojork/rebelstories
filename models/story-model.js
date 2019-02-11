@@ -9,11 +9,10 @@ const storySchema = new Schema(
     description: {
       type: String,
       required: true,
-      minlength: 100,
       maxlength: 650
     },
     pictureUrl: { type: String },
-    year: { type: String },
+    year: { type: Number },
     country: { type: String, required: true },
     quote: { type: String, required: true },
     publisher: { type: Schema.Types.ObjectId, ref: "User", required: true }

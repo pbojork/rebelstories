@@ -1,0 +1,41 @@
+<h2>Add a story</h2>
+
+<form action="/process-story" method="POST">
+  <label>
+    Name
+    <input type="text" name="name" placeholder="Ada Lovelace" required />
+  </label>
+
+  <label>
+    Profession
+    <input type="text" name="profession" placeholder="Mathematician" />
+  </label>
+
+  <label>
+    Description (max 650 characters):
+    <input type="text" name="description" placeholder="soooo brave" maxlength="650" required />
+  </label>
+
+  <label>
+    Picture URL:
+    <input type="text" name="pictureUrl" placeholder="http://example.com/women.jpg" />
+  </label>
+
+  <label>
+    Year
+    <input type="number" name="year" placeholder="1990" />
+  </label>
+
+  <label>
+    Country
+    <input type="text" name="country" placeholder="Brazil" />
+  </label>
+
+  <label>
+    Quote
+    <input type="text" name="quote" placeholder="I can do it!" />
+  </label>
+
+  <button>Save this story</button>
+
+</form>
