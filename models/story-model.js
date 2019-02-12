@@ -15,8 +15,9 @@ const storySchema = new Schema(
     year: { type: Number },
     country: { type: String },
     quote: { type: String },
-    publisher: { type: Schema.Types.ObjectId, ref: "User" }
-    // user is the string defined in const User = mongoose.model("User, userSchema") in user-model.js
+    publisher: { type: Schema.Types.ObjectId, ref: "User" },
+    mood1: { type: Array },
+    mood2: { type: Array }
   },
   {
     timestamps: true
