@@ -1,22 +1,29 @@
-{{> nav_links}}
-
 <div class="row">
+  <div class="col">
+    Left
+  </div>
+  <div class="col">
+    <h2>Log In</h2>
 
-  <h2>Log In</h2>
+    {{> flash_messages}}
 
-  {{> flash_messages}}
+    <form action="/process-login" method="POST">
+      <label>
+        Username:
+        <input type="text" name="userName" placeholder="lovelace" />
+      </label>
 
-  <form action="/process-login" method="POST">
-    <label>
-      Username:
-      <input type="text" name="userName" placeholder="lovelace" />
-    </label>
+      <label>
+        Password:
+        <input type="password" name="originalPassword" placeholder="password" />
+      </label>
 
-    <label>
-      Password:
-      <input type="password" name="originalPassword" placeholder="password" />
-    </label>
-
-    <button>Log In</button>
-  </form>
+      <button>Log In</button>
+    </form>
+  </div>
+  <div class="col">
+    Right
+  </div>
 </div>
+
+{{> footer}}
