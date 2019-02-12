@@ -10,6 +10,14 @@ router.get("/signup", (req, res, next) => {
   res.render("auth-views/signup-form.hbs");
 });
 
+router.get("/mood1", (req, res, next) => {
+  res.render("entry-views/mood-page1.hbs");
+});
+
+router.get("/mood2", (req, res, next) => {
+  res.render("entry-views/mood-page2.hbs");
+});
+
 router.post("/process-signup", (req, res, next) => {
   const { userName, email, originalPassword } = req.body;
 
@@ -29,11 +37,9 @@ router.post("/process-signup", (req, res, next) => {
 
   User.create({ userName, email, encryptedPassword })
     .then(() => {
-      // req.flash sends feedback message before redirect
-      // (it's defined by the "connect-flash" npm package)
-      req.flash("success", "Sign up successful! 👍");
-      // redirect to the HOME PAGE if the sign up WORKED
-      res.redirect("/");
+      req.flash("success", "Sign up successful!");
+
+      res.redirect("/mood1");
     })
     .catch(err => next(err));
 });
@@ -48,40 +54,24 @@ router.post("/process-login", (req, res, next) => {
   User.findOne({ userName: { $eq: userName } })
     .then(userDoc => {
       if (!userDoc) {
-        // req.flash sends feedback message before redirect
-        // (it's defined by the "connect-flash" npm package)
         req.flash("error", "Username is incorrect.");
-        // redirect to LOGIN PAGE if result is NULL (no account with that email)
+
         res.redirect("/login");
-        // user return to STOP the function here if the PASSWORD is BAD
+
         return;
       }
-
       const { encryptedPassword } = userDoc;
       console.log(originalPassword, encryptedPassword);
-      // validate the password by using bcrypt.compareSync()
+
       if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {
-        // req.flash sends feedback message before redirect
-        // (it's defined by the "connect-flash" npm package)
         req.flash("error", "Password is incorrect.");
-        // redirect to LOGIN PAGE if the password don't match
+
         res.redirect("/login");
-        // user return to STOP the function here if the PASSWORD is BAD
+
         return;
       }
-
-      // email & password are CORRECT!
-      // if we MANUALLY managed the user session
-      // req.session.userId = userDoc._id;
-
-      // instead we will use PASSPORT - an npm package for managing user sessions
-      // req.logIn is a Passport method that calls serializeUser()
-      // (that saves the USER ID in teh session which means we are logged-in)
       req.logIn(userDoc, () => {
-        // req.flash sends feedback message before redirect
-        // (it's defined by the "connect-flash" npm package)
-        // req.flash("success", "Log in successful! 👍");
-        res.redirect("/");
+        res.redirect("/mood1");
       });
     })
     .catch(err => next(err));

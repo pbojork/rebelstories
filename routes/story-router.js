@@ -79,4 +79,8 @@ router.get("/your-story/:storyId", (req, res, next) => {
     .catch(err => next(err));
 });
 
+// // router.get("/mood1", (req, res, next) => {
+//   res.render("entry-views/mood-page1.hbs");
+// });
+
 module.exports = router;
