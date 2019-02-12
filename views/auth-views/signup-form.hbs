@@ -1,27 +1,27 @@
-<div class="row d-flex justify-content-center row-bg">
+<div class="row d-flex justify-content-center  row-bg">
 
-  <div class="col-6 bigcol d-flex justify-content-center flex-column align-items-center">
-    <div>
+  <div class="col-6 col-12 bigcol d-flex justify-content-center flex-column align-items-center">
+    <div class="my-form">
       <h2>Sign Up</h2>
 
       {{> flash_messages}}
 
       <form action="/process-signup" method="POST">
         <label>
-          Username:
+          Username:<br />
           <input type="text" name="userName" placeholder="Ada Lovelace" minlength="2" required />
         </label>
 
         <label>
-          Email:
+          Email:<br />
           <input type="text" name="email" placeholder="ada@example.com" required />
         </label>
 
         <label>
-          Password:
+          Password:<br />
           <input type="password" name="originalPassword" placeholder="password" required />
         </label>
-        <button>SIGN UP</button>
+        <button class="button">Sign Up</button>
       </form>
     </div>
   </div>

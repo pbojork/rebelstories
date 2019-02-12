@@ -32,9 +32,9 @@ body {
 //   border: 1px solid #b5d3de;
 // }
 
-// .bigcol {
-//   background-color: red;
-// }
+.bigcol {
+  margin: 50px;
+}
 
 .row-bg {
   background-color: #233256;
@@ -52,8 +52,32 @@ body {
   display: block;
 }
 
+.my-form {
+  padding: 40px;
+  border-radius: 6px;
+  background-color: #fcf8ec;
+}
+
 label {
   display: block;
+}
+
+input {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 6px;
+  height: 36px;
+  width: 300px;
+  margin: 6px 0;
+}
+
+.error-message {
+  color: #c5352a;
+  padding: 12px;
+  border: 1px solid #eec8cb;
+  background-color: #f3d8da;
+  border-radius: 3px;
+  margin-bottom: 18px;
 }
 
 ul {
@@ -71,8 +95,8 @@ ul {
   height: 50px;
   padding: 15px;
   margin: auto;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px #262d3f;
+  margin: 24px auto 0;
+  box-shadow: 1px 1px #262d3f;
 }
 
 footer {
@@ -82,6 +106,10 @@ footer {
   text-align: center;
   color: #b5d3de;
   background-color: #233256;
+}
+
+h2 {
+  margin-bottom: 24px;
 }
 
 p {

@@ -1,28 +1,25 @@
-<div class="row">
-  <div class="col">
-    Left
-  </div>
-  <div class="col">
-    <h2>Log In</h2>
+<div class="row d-flex justify-content-center  row-bg">
 
-    {{> flash_messages}}
+  <div class="col-6 col-12 bigcol d-flex justify-content-center flex-column align-items-center">
+    <div class="my-form">
+      <h2>Log In</h2>
 
-    <form action="/process-login" method="POST">
-      <label>
-        Username:
-        <input type="text" name="userName" placeholder="lovelace" />
-      </label>
+      {{> flash_messages}}
 
-      <label>
-        Password:
-        <input type="password" name="originalPassword" placeholder="password" />
-      </label>
+      <form action="/process-login" method="POST">
+        <label>
+          Username:<br />
+          <input type="text" name="userName" placeholder="lovelace" />
+        </label>
 
-      <button>Log In</button>
-    </form>
-  </div>
-  <div class="col">
-    Right
+        <label>
+          Password:<br />
+          <input type="password" name="originalPassword" placeholder="password" />
+        </label>
+
+        <button class="button">Log In</button>
+      </form>
+    </div>
   </div>
 </div>
 
