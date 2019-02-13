@@ -1,77 +1,61 @@
 body {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .button {
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .my-container {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 h4 {
-  color: white;
-}
+  color: white; }
 
 .link-text {
   color: black;
   padding: 8px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .username {
   color: #fcf8ec;
   align-self: center;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 a {
-  color: #fcf8ec;
-}
+  color: #fcf8ec; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .justify-content-end {
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .menu-nav {
-  text-align: right;
-}
+  text-align: right; }
 
 .bigcol {
-  margin: 50px;
-}
+  margin: 50px; }
 
 .row-bg {
-  background-color: #233256;
-}
+  background-color: #233256; }
 
 .bigimg {
   height: 550px;
-  object-fit: contain;
-}
+  object-fit: contain; }
 
 .bg-blue {
   background-color: #233256;
-  padding: 2px 16px;
-}
+  padding: 2px 16px; }
 
 .my-form {
   padding: 40px;
   border-radius: 6px;
-  background-color: #fcf8ec;
-}
+  background-color: #fcf8ec; }
 
 label {
-  display: block;
-}
+  display: block; }
 
 input {
   border: 1px solid #cccccc;
@@ -79,8 +63,7 @@ input {
   padding: 6px;
   height: 36px;
   width: 300px;
-  margin: 6px 0;
-}
+  margin: 6px 0; }
 
 .error-message {
   color: #c5352a;
@@ -88,12 +71,10 @@ input {
   border: 1px solid #eec8cb;
   background-color: #f3d8da;
   border-radius: 3px;
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .button {
   color: #fcf8ec;
@@ -107,8 +88,7 @@ ul {
   padding: 15px;
   margin: auto;
   margin: 24px auto 0;
-  box-shadow: 1px 1px #262d3f;
-}
+  box-shadow: 1px 1px #262d3f; }
 
 footer {
   margin-top: 0;
@@ -116,25 +96,19 @@ footer {
   padding: 20px 16px;
   text-align: center;
   color: #b5d3de;
-  background-color: #233256;
-}
+  background-color: #233256; }
 
 h2 {
-  margin-bottom: 24px;
-}
+  margin-bottom: 24px; }
 
 p {
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
 
 .keyword {
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 @media (max-width: 768px) {
   .keyword {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

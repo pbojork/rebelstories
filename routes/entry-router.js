@@ -43,19 +43,12 @@ router.get("/:keyword/mood2", (req, res, next) => {
 router.get("/:keyword2/story", (req, res, next) => {
   Story.find({ mood2: { $eq: req.params.keyword2 } })
     .then(mood2Results => {
-      console.log(mood2Results);
-
       const randomStory = Math.floor(Math.random() * mood2Results.length);
-      console.log([randomStory]);
+      console.log(mood2Results[randomStory]);
 
-      res.locals.oneStory = randomStory;
       res.render("story-views/story.hbs");
     })
     .catch(err => next(err));
-  // after clicking on one keyword in mood2.hbs, random pick a story and display it in story.hbs
-
-  // const randomStory = Math.floor(math.random() * mood1Results.length);
-  // console.log(mood1Results[randomStory]);
 });
 
 module.exports = router;
