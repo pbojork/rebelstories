@@ -114,6 +114,17 @@ const storyData = [
     quote: "I have more than enough courage.",
     mood1: ["oppressed", "undervalued"],
     mood2: ["empowered", "independent"]
+  },
+  {
+    name: "Fadumo Dayib",
+    profession: "Politician",
+    description: " ",
+    pictureUrl: "",
+    year: "1973",
+    country: "Somalia",
+    quote: "We will no longer negotiate for our existence.",
+    mood1: ["oppressed", "powerless", "discriminated"],
+    mood2: ["independent", "empowered"]
   }
 ];
 
