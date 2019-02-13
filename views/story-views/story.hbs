@@ -1,5 +1,10 @@
 {{> nav_links}}
 
-{{#each myArray2}}
-<a class="link-text" href="/{{this}}/story">{{this}}</a>
-{{/each}}
+
+
+<h4>{{this.name}}</h4>
+<h5>{{this.profession}}</h5>
+<h6>{{this.year}}, {{this.country}}</h6>
+<p>{{this.description}}</p>
+<img src="{{this.pictureUrl}}" alt="image" />
+<p>{{this.quote}}</p>

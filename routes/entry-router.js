@@ -26,41 +26,30 @@ router.get("/:keyword/mood2", (req, res, next) => {
       const arr = [];
       mood1Results.forEach(element => {
         console.log(element.mood2);
-        // const filtered = arr.filter(arr => arr.length);
-        // return filtered;
-        // // arr.filter((elem, index, self) => {
-        // //   return index == self.indexOf(elem);
-
-        // filtered.push(element.mood2[0], element.mood2[1]);
         arr.push(element.mood2[0], element.mood2[1]);
       });
 
-      //   const filteredKeywords = arr.filter(elem, index, self) => {
-      //     return index == self.indexOf(elem);
-
-      //     return filteredKeywords;
-      // });
+      const uniqueArray = arr.filter(function(elem, pos, arr) {
+        return arr.indexOf(elem) == pos;
+      });
 
       console.log(arr);
-      res.locals.myArray = arr;
+      res.locals.myArray = uniqueArray;
       res.render("entry-views/mood-page2.hbs");
     })
     .catch(err => next(err));
 });
 
-router.get("/:keyword2/story", () => {
+router.get("/:keyword2/story", (req, res, next) => {
   Story.find({ mood2: { $eq: req.params.keyword2 } })
     .then(mood2Results => {
       console.log(mood2Results);
-      // const arr2 = [];
 
-      // mood2Results.forEach(element => {
-      //   console.log(element);
-      //   arr2.push(element);
-      // });
-      // console.log(arr2);
-      // res.locals.myArray2 = arr2;
-      // res.render("entry-views/story.hbs");
+      const randomStory = Math.floor(Math.random() * mood2Results.length);
+      console.log([randomStory]);
+
+      res.locals.oneStory = randomStory;
+      res.render("story-views/story.hbs");
     })
     .catch(err => next(err));
   // after clicking on one keyword in mood2.hbs, random pick a story and display it in story.hbs
