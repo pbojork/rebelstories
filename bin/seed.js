@@ -118,7 +118,8 @@ const storyData = [
   {
     name: "Fadumo Dayib",
     profession: "Politician",
-    description: " ",
+    description:
+      "Once there was a girl who spent her childhood trying to escape from war. Fadumo and her family had to stay one step ahead of the fighting, she couldn't go to school, and was illiterate until she was 14. One day her mother told her to leave the country with her brother and sister. When they arrived in Finland, they could do all the things that children can do in a peaceful country. Fadumo never forgot about Somalia. She learned everything she could to could go back and help her people regain freedom and peace. She returned to help set up hospitals across Somalia. Today, Fadumo is Somalia's first female presidential candidate.",
     pictureUrl: "",
     year: "1973",
     country: "Somalia",
