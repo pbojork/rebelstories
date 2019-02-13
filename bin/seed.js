@@ -124,7 +124,7 @@ const storyData = [
     country: "Somalia",
     quote: "We will no longer negotiate for our existence.",
     mood1: ["oppressed", "powerless", "discriminated"],
-    mood2: ["independent", "empowered", "liberated"]
+    mood2: ["independent", "empowered"]
   }
 ];
 

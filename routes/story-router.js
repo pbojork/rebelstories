@@ -83,4 +83,8 @@ router.get("/goodnight", (req, res, next) => {
   res.render("story-views/goodnight.hbs");
 });
 
+router.get("/story-edit", (req, res, next) => {
+  res.render("story-views/story-edit.hbs");
+});
+
 module.exports = router;
