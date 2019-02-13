@@ -3,9 +3,7 @@ body {
   font-size: 14px;
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-.button {
-  box-shadow: none;
-}
+
 .my-container {
   margin: 0;
   padding: 0;
@@ -16,7 +14,7 @@ h4 {
   color: white;
 }
 .link-text {
-  color: black;
+  color: white;
   padding: 8px;
   text-decoration: none;
 }
@@ -28,7 +26,7 @@ h4 {
 }
 
 a {
-  color: #fcf8ec;
+  color: black;
 }
 
 a:hover {
@@ -111,7 +109,7 @@ ul {
   padding: 15px;
   margin: auto;
   margin: 24px auto 0;
-  box-shadow: 1px 1px #262d3f;
+  box-shadow: none;
 }
 
 footer {
