@@ -10,13 +10,15 @@ router.get("/signup", (req, res, next) => {
   res.render("auth-views/signup-form.hbs");
 });
 
-router.get("/mood1", (req, res, next) => {
-  res.render("entry-views/mood-page1.hbs");
-});
+// Gets mood pages when creating a new username.
+// Do we erase from here???
+// router.get("/mood1", (req, res, next) => {
+//   res.render("entry-views/mood-page1.hbs");
+// });
 
-router.get("/mood2", (req, res, next) => {
-  res.render("entry-views/mood-page2.hbs");
-});
+// router.get("/mood2", (req, res, next) => {
+//   res.render("entry-views/mood-page2.hbs");
+// });
 
 router.post("/process-signup", (req, res, next) => {
   const { userName, email, originalPassword } = req.body;

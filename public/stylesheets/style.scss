@@ -11,7 +11,7 @@ body {
 }
 
 .link-text {
-  color: #fcf8ec;
+  color: red;
   padding: 8px;
   text-decoration: none;
 }
@@ -124,4 +124,17 @@ h2 {
 
 p {
   margin-bottom: 0px;
+}
+
+// Keyword display
+
+.keyword {
+  flex-direction: row;
+  // flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .keyword {
+    flex-direction: column;
+  }
 }
