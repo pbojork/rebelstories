@@ -3,7 +3,9 @@ body {
   font-size: 14px;
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+.button {
+  box-shadow: none;
+}
 .my-container {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ h4 {
   color: white;
 }
 .link-text {
-  color: red;
+  color: black;
   padding: 8px;
   text-decoration: none;
 }
