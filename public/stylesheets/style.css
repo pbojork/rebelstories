@@ -3,17 +3,14 @@
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 body {
   font-family: "Lato", sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .my-nav-link {
   font-family: "Lato", sans-serif;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
 .enterView {
-  height: 100%;
-}
+  height: 100%; }
 
 .body-star {
   background: url("../images/starbackg.jpg") no-repeat center center fixed;
@@ -27,8 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .log-btn {
   margin: 20px 10px;
@@ -41,101 +37,82 @@ body {
   width: 160px;
   height: 50px;
   padding: 15px;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .centerLog {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  flex-wrap: unset;
-}
+  flex-wrap: unset; }
 
 .bg-100 {
-  height: 100%;
-}
+  height: 100%; }
 
 .card {
   width: 600px;
   height: 400px;
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .my-container {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 h4 {
   color: black;
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .link-text {
   color: white;
   padding: 8px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .username {
   color: #fcf8ec;
   align-self: center;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 a {
-  color: black;
-}
+  color: black; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .justify-content-end {
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .menu-nav {
-  text-align: right;
-}
+  text-align: right; }
 
 .bigcol {
-  margin: 50px;
-}
+  margin: 50px; }
 
 .row-bg {
-  background-color: #233256;
-}
+  background-color: #233256; }
 
 .bigimg {
   height: 550px;
-  object-fit: contain;
-}
+  object-fit: contain; }
 
 .bg-blue {
   background-color: #233256;
-  padding: 2px 16px;
-}
+  padding: 2px 16px; }
 
 .my-form {
   padding: 40px;
   border-radius: 6px;
-  background-color: white;
-}
+  background-color: white; }
 
 label {
   display: block;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 input {
   border: 1px solid #cccccc;
@@ -143,8 +120,7 @@ input {
   padding: 6px;
   height: 36px;
   width: 300px;
-  margin: 6px 0;
-}
+  margin: 6px 0; }
 
 .success-message {
   color: #2b562b;
@@ -152,8 +128,7 @@ input {
   border: 1px solid #97b398;
   background-color: #d9ecdb;
   border-radius: 3px;
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
 .error-message {
   color: #c5352a;
@@ -161,12 +136,10 @@ input {
   border: 1px solid #eec8cb;
   background-color: #f3d8da;
   border-radius: 3px;
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .button {
   color: white;
@@ -181,8 +154,7 @@ ul {
   margin: auto;
   margin: 18px auto 0;
   box-shadow: none;
-  border: none;
-}
+  border: none; }
 
 .enterButton {
   color: #fcf8ec;
@@ -194,8 +166,7 @@ ul {
   height: 50px;
   padding: 15px;
   margin: auto;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .myFooter {
   margin-top: 0;
@@ -205,47 +176,48 @@ ul {
   color: #b5d3de;
   background-color: #233256;
   display: flex;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 h2 {
-  margin-bottom: 24px;
-}
+  margin-bottom: 24px; }
 
 p {
   margin-bottom: 0px;
   font-family: "Lato", sans-serif;
-  font-size: 12px;
-}
-
-.my-nav {
-  margin-bottom: none !important;
-}
+  font-size: 12px; }
 
 .mood-grid {
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid black;
   margin-right: 0;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .keyword {
-  border: 1px solid lightskyblue;
+  padding: 20px;
   border-radius: 100px;
-  font-family: BackToBlack;
-}
+  background-color: #233256;
+  font-family: Shrikhand;
+  font-size: 17px; }
 
 .key-layout {
   margin: 0px;
   padding: 0px;
+  text-align: center; }
+
+.cercle-text {
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-}
+  text-decoration: none;
+  height: 170px;
+  width: 170px; }
+  .cercle-text:hover, .cercle-text:active {
+    color: lightblue;
+    text-decoration: none; }
 
 @media (max-width: 576px) {
   .mood-grid {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
