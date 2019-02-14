@@ -1,8 +1,24 @@
 {{> nav_links}}
 
-<h4>{{storyItem.name}}</h4>
-<h5>{{storyItem.profession}}</h5>
-<h6>{{storyItem.year}}, {{storyItem.country}}</h6>
-<p>{{storyItem.description}}</p>
-<img src="{{storyItem.pictureUrl}}" alt="image" />
-<p>{{storyItem.quote}}</p>
+
+
+<!-- Page Content -->
+<div class="container body-star">
+  <div class="border-0 shadow my-card">
+    <div>
+      <h1 class="font-weight-light">{{storyItem.name}}</h1>
+      <h5>{{storyItem.profession}}</h5>
+      <p>{{storyItem.year}} - {{storyItem.country}}</p>
+      <p>{{storyItem.description}}</p>
+      <!--<img src="{{storyItem.pictureUrl}}" alt="image" />-->
+      <h5 class="quote">" {{storyItem.quote}} "</h5>
+      <div class="d-flex">
+        <a href="/your-story/{{storyItem._id}}/edit" class="log-btn">Edit</a>
+        <a href="/your-story/{{storyItem._id}}/delete" class="log-btn">Delete</a>
+      </div>
+      {{!-- <div style="height: 700px"></div> --}}
+
+
+    </div>
+  </div>
+</div>
