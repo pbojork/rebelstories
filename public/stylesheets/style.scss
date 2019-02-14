@@ -11,7 +11,7 @@ body {
 }
 
 h4 {
-  color: white;
+  color: red;
 }
 .link-text {
   color: white;
@@ -129,15 +129,34 @@ p {
   margin-bottom: 0px;
 }
 
-// Keyword display
+//// Keyword Display ////
 
-.keyword {
+.mood-grid {
   flex-direction: row;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-@media (max-width: 768px) {
-  .keyword {
+.keyword {
+  border: 1px solid lightskyblue;
+  // padding: 20px;
+  // height: 100px;
+  // width: 100px;
+  border-radius: 100px;
+  // background-color: lightskyblue;
+  font-family: BackToBlack;
+}
+
+.key-layout {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .mood-grid {
     flex-direction: column;
   }
 }

@@ -1,0 +1,53 @@
+{{> nav_links}}
+
+<div class="row d-flex justify-content-center  row-bg">
+  <div class="col-6 col-12 bigcol d-flex justify-content-center flex-column align-items-center">
+    <div class="my-form">
+      <h2>Edit your story</h2>
+
+      <form action="/your-story/{{storyItem._id}}/process-edit" method="POST">
+        <label>
+          Name <br />
+          <input type="text" name="name" value="{{storyItem.name}}" placeholder="Ada Lovelace" required />
+        </label>
+
+        <label>
+          Profession<br />
+          <input type="text" name="profession" value="{{storyItem.profession}}" placeholder="Mathematician" />
+        </label>
+
+        <label>
+          Description (max 650 characters)<br />
+          <input type="text" name="description" value="{{storyItem.description}}" placeholder="soooo brave"
+            maxlength="650" required />
+        </label>
+
+        <label>
+          Picture URL <br />
+          <input type="text" name="pictureUrl" value="{{storyItem.pictureUrl}}"
+            placeholder="http://example.com/women.jpg" />
+        </label>
+
+        <label>
+          Year<br />
+          <input type="number" name="year" value="{{storyItem.year}}" placeholder="1990" />
+        </label>
+
+        <label>
+          Country<br />
+          <input type="text" name="country" value="{{storyItem.country}}" placeholder="Brazil" />
+        </label>
+
+        <label>
+          Quote<br />
+          <input type="text" name="quote" value="{{storyItem.quote}}" placeholder="I can do it!" />
+        </label>
+
+        <button class="button">Save this story</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+{{> footer}}

@@ -8,7 +8,7 @@ body {
   max-width: 100%; }
 
 h4 {
-  color: white; }
+  color: red; }
 
 .link-text {
   color: white;
@@ -101,11 +101,25 @@ h2 {
 p {
   margin-bottom: 0px; }
 
-.keyword {
-  flex-direction: row; }
+.mood-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin-right: 0;
+  margin-left: 0; }
 
-@media (max-width: 768px) {
-  .keyword {
+.keyword {
+  border: 1px solid lightskyblue;
+  border-radius: 100px;
+  font-family: BackToBlack; }
+
+.key-layout {
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }
+
+@media (max-width: 576px) {
+  .mood-grid {
     flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

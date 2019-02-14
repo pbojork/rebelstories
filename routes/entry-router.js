@@ -44,8 +44,9 @@ router.get("/:keyword2/story", (req, res, next) => {
   Story.find({ mood2: { $eq: req.params.keyword2 } })
     .then(mood2Results => {
       const randomStory = Math.floor(Math.random() * mood2Results.length);
-      console.log(mood2Results[randomStory]);
-
+      const storyData = mood2Results[randomStory];
+      // res.json(storyData.name);
+      res.locals.storyData = storyData;
       res.render("story-views/story.hbs");
     })
     .catch(err => next(err));

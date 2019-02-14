@@ -79,12 +79,64 @@ router.get("/your-story/:storyId", (req, res, next) => {
     .catch(err => next(err));
 });
 
-router.get("/goodnight", (req, res, next) => {
-  res.render("story-views/goodnight.hbs");
+router.get("/your-story/:storyId/delete", (req, res, next) => {
+  const { storyId } = req.params;
+
+  Story.findByIdAndRemove(storyId)
+    .then(storyDoc => {
+      res.redirect("/my-stories");
+    })
+    .catch(err => next(err));
 });
 
-router.get("/story-edit", (req, res, next) => {
-  res.render("story-views/story-edit.hbs");
+router.get("/your-story/:storyId/edit", (req, res, next) => {
+  const { storyId } = req.params;
+
+  Story.findById(storyId)
+    .then(storyDoc => {
+      res.locals.storyItem = storyDoc;
+      res.render("story-views/story-edit.hbs");
+    })
+    .catch(err => next(err));
+});
+// your-story/{{storyItem._id}}/process-edit
+router.post("/your-story/:storyId/process-edit", (req, res, next) => {
+  const { storyId } = req.params;
+  console.log(storyId);
+
+  const {
+    name,
+    profession,
+    description,
+    pictureUrl,
+    year,
+    country,
+    quote
+  } = req.body;
+
+  Story.findByIdAndUpdate(
+    storyId, // ID of the doument we want to update
+    {
+      $set: {
+        name,
+        profession,
+        description,
+        pictureUrl,
+        year,
+        country,
+        quote
+      }
+    }, // changes to make to that document
+    { runValidators: true } // additional settings (enforce the rules)
+  )
+    .then(storyDoc => {
+      res.redirect(`/your-story/${storyDoc._id}`);
+    })
+    .catch(err => next(err));
+});
+
+router.get("/goodnight", (req, res, next) => {
+  res.render("story-views/goodnight.hbs");
 });
 
 module.exports = router;
