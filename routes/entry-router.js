@@ -45,7 +45,7 @@ router.get("/:keyword2/story", (req, res, next) => {
     .then(mood2Results => {
       const randomStory = Math.floor(Math.random() * mood2Results.length);
       const storyData = mood2Results[randomStory];
-      // res.json(storyData.name);
+      // res.json(storyData);
       res.locals.storyData = storyData;
       res.render("story-views/story.hbs");
     })

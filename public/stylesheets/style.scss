@@ -3,7 +3,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 12px;
+  // font-size: 12px;
 }
 
 .my-nav-link {
@@ -13,15 +13,6 @@ body {
 
 .enterView {
   height: 100%;
-}
-
-.my-card {
-  width: 90%;
-  height: fit-content;
-  margin: 0 !important;
-  padding: 40px;
-  border-radius: 6px;
-  background-color: white;
 }
 
 .body-star {
@@ -77,16 +68,33 @@ body {
   height: 100vh;
 }
 
+////      Story Pages      ////
+
+.my-card {
+  width: 90%;
+  height: fit-content;
+  margin: 0 !important;
+  padding: 40px;
+  border-radius: 6px;
+  background-color: white;
+}
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
+  margin-bottom: 12px;
 }
 
-// h4 {
-//   color: black;
-//   font-family: "Shrikhand", sans-serif;
-//   font-size: 30px;
-// }
+p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.quote {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 24px;
+  color: #3c5175;
+}
+//////////////////////////////////////////////////
 
 .link-text {
   color: white;
@@ -219,11 +227,6 @@ ul {
 
 //////////////////////////////////////////////////
 
-p {
-  margin-bottom: 0px;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-}
 // Keyword display mood1/2
 
 .mood-grid {
