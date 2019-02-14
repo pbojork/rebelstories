@@ -1,5 +1,21 @@
 {{> nav_links}}
 
-{{#each myArray}}
-<a class="link-text" href="/{{this}}/story">{{this}}</a>
-{{/each}}
+<div class="row d-flex justify-content-center body-star">
+  <div class="col-9 bigcol d-flex justify-content-center align-items-center mood-grid">
+
+
+    <div class="col-12 justify-content-center question ">
+      <h1 class="question">How do you want to feel?</h1>
+    </div>
+
+
+
+
+    {{#each myArray}}
+    <div class="col-4 key-layout">
+      <a href="/{{this}}/story" class="keyword cercle-text">{{this}}</a>
+    </div>
+    {{/each}}
+
+  </div>
+</div>

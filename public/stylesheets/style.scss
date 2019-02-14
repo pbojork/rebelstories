@@ -95,6 +95,13 @@ p {
   color: #3c5175;
 }
 //////////////////////////////////////////////////
+.question {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+}
+.questionbox {
+  display: inline-block;
+}
 
 .link-text {
   color: white;
@@ -243,8 +250,9 @@ ul {
   // width: 100px;
   border-radius: 100px;
   background-color: #233256;
-  font-family: Shrikhand;
-  font-size: 17px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .key-layout {
@@ -260,8 +268,8 @@ ul {
   text-align: center;
   text-decoration: none;
 
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
 
   &:hover,
   &:active {

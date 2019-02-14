@@ -80,6 +80,13 @@ p {
   font-size: 24px;
   color: #3c5175; }
 
+.question {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px; }
+
+.questionbox {
+  display: inline-block; }
+
 .link-text {
   color: white;
   padding: 8px;
@@ -200,8 +207,9 @@ ul {
   padding: 20px;
   border-radius: 100px;
   background-color: #233256;
-  font-family: Shrikhand;
-  font-size: 17px; }
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bolder; }
 
 .key-layout {
   margin: 0px;
@@ -214,8 +222,8 @@ ul {
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  height: 170px;
-  width: 170px; }
+  height: 150px;
+  width: 150px; }
   .cercle-text:hover, .cercle-text:active {
     color: lightblue;
     text-decoration: none; }
