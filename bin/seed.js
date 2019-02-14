@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const Story = require("../models/story-model.js");
 
 mongoose
-  .connect("mongodb://localhost/rebelstories", { useNewUrlParser: true })
+  .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
