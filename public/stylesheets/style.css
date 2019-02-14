@@ -103,6 +103,9 @@ a:hover {
   margin: 50px; }
 
 .row-bg {
+  background-color: #233256; }
+
+.storyform-bkg {
   background: url("../images/starbackg.jpg") no-repeat center center fixed; }
 
 .bigimg {
