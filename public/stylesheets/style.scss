@@ -128,18 +128,18 @@ a:hover {
   padding: 2px 16px;
 }
 
-// .block {
-//   display: block;
-// }
+////      Sign-up / Log-in forms      ////
 
 .my-form {
   padding: 40px;
   border-radius: 6px;
-  background-color: #fcf8ec;
+  background-color: white;
 }
 
 label {
   display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
 }
 
 input {
@@ -149,6 +149,15 @@ input {
   height: 36px;
   width: 300px;
   margin: 6px 0;
+}
+
+.success-message {
+  color: #2b562b;
+  padding: 12px;
+  border: 1px solid #97b398;
+  background-color: #d9ecdb;
+  border-radius: 3px;
+  margin-bottom: 18px;
 }
 
 .error-message {
@@ -165,18 +174,19 @@ ul {
 }
 
 .button {
-  color: #fcf8ec;
+  color: white;
+  font-size: 14px;
+  background-color: #3c5175;
   display: block;
   border-radius: 4px;
-  background-color: #5fa7b3;
   text-align: center;
   text-decoration: none;
   width: 160px;
   height: 50px;
-  padding: 15px;
   margin: auto;
-  margin: 24px auto 0;
+  margin: 18px auto 0;
   box-shadow: none;
+  border: none;
 }
 
 .enterButton {
@@ -202,6 +212,8 @@ ul {
   display: flex;
   align-items: flex-end;
 }
+
+//////////////////////////////////////////////////
 
 h2 {
   margin-bottom: 24px;
