@@ -1,17 +1,79 @@
+@import url(“https://fonts.googleapis.com/css?family=Lato“);
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+
 body {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.enterView {
+  height: 100%;
+}
+
+.body-star {
+  background: url("../images/starbackg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  //text-align: center;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-btn {
+  margin: 20px 10px;
+  color: #fcf8ec;
+  display: block;
+  border-radius: 4px;
+  background-color: #5fa7b3;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  padding: 15px;
+  box-shadow: none;
+}
+
+.centerLog {
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: unset;
+}
+
+.bg-100 {
+  height: 100%;
+}
+
+.card {
+  width: 600px;
+  height: 400px;
+  margin: 0 !important;
+}
 .my-container {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 
 h4 {
-  color: white;
+  color: black;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 .link-text {
   color: white;
@@ -112,23 +174,38 @@ ul {
   box-shadow: none;
 }
 
-footer {
+.enterButton {
+  color: #fcf8ec;
+  border-radius: 4px;
+  background-color: #5fa7b3;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  padding: 15px;
+  margin: auto;
+  box-shadow: none;
+}
+
+.myFooter {
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px 16px;
   text-align: center;
   color: #b5d3de;
   background-color: #233256;
+  display: flex;
+  align-items: flex-end;
 }
 
 h2 {
   margin-bottom: 24px;
 }
-
 p {
   margin-bottom: 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
 }
-
 // Keyword display
 
 .keyword {
