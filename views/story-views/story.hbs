@@ -3,17 +3,22 @@
 <!-- Page Content -->
 <div class="container body-star">
   <div class="border-0 shadow my-card">
-    <div>
-      <h1 class="font-weight-light">{{storyData.name}}</h1>
-      <h5>{{storyData.profession}}</h5>
-      <p>{{storyData.year}} - {{storyData.country}}</p>
-      <p>{{storyData.description}}</p>
-      {{!-- <img src="{{storyData.pictureUrl}}" alt="{{storyData.name}} image" /> --}}
-      <h5 class="quote">" {{storyData.quote}} "</h5>
+    <div class="">
+      <div>
+        <h1 class="font-weight-light">{{storyData.name}}</h1>
+        <h5>{{storyData.profession}}</h5>
+        <p>{{storyData.year}} - {{storyData.country}}</p>
+        <p>{{storyData.description}}</p>
+        <h5 class="quote">" {{storyData.quote}} "</h5>
+      </div>
+      <div class="">
+        {{!-- <img src="{{storyData.pictureUrl}}" alt="{{storyData.name}} image" class="" /> --}}
+      </div>
       <a href="/goodnight" class="button">Goodnight</a>
-      {{!-- <div style="height: 700px"></div> --}}
-
-      {{!-- <p class="lead mb-0">You've reached the end!</p> --}}
     </div>
+    {{!-- <div style="height: 700px"></div> --}}
+
+    {{!-- <p class="lead mb-0">You've reached the end!</p> --}}
   </div>
+</div>
 </div>
