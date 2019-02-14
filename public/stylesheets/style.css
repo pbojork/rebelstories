@@ -69,7 +69,18 @@ body {
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
+  color: #233256;
   margin-bottom: 12px; }
+
+h4 {
+  color: #333333;
+  font-weight: 900; }
+
+h6 {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 900; }
 
 p {
   font-size: 16px;
@@ -78,7 +89,36 @@ p {
 .quote {
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
-  color: #3c5175; }
+  color: #3c5075; }
+
+.links {
+  color: #6683a3;
+  text-decoration: none; }
+
+.links:hover,
+.links:active {
+  color: #3c5075;
+  text-decoration: none; }
+
+hr {
+  border-top: 1px solid #3c5075; }
+
+li {
+  margin-bottom: 18px; }
+
+story-bg {
+  background: url("../images/eufrosina.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .question {
   font-family: "Shrikhand", sans-serif;
@@ -87,17 +127,8 @@ p {
 .questionbox {
   display: inline-block; }
 
-a {
-  color: black; }
-
-a:hover {
-  text-decoration: none; }
-
 .justify-content-end {
   justify-content: flex-end; }
-
-.menu-nav {
-  text-align: right; }
 
 .bigcol {
   margin: 50px; }
@@ -108,10 +139,6 @@ a:hover {
 .bigimg {
   height: 550px;
   object-fit: contain; }
-
-.bg-blue {
-  background-color: #233256;
-  padding: 2px 16px; }
 
 .my-form {
   padding: 40px;
@@ -148,7 +175,9 @@ input {
   margin-bottom: 18px; }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
 
 .button {
   color: white;
@@ -160,6 +189,7 @@ ul {
   text-decoration: none;
   width: 160px;
   height: 50px;
+  padding: 15px;
   margin: auto;
   margin: 18px auto 0;
   box-shadow: none;

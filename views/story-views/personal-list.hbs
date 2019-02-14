@@ -1,15 +1,25 @@
 {{> nav_links}}
 
-<h1>My Stories</h1>
+<!-- Page Content -->
+<div class="container body-star">
+  <div class="border-0 shadow my-card">
 
-<a href="/story-add">Add a Story</a>
-<ul>
-  {{#each storyArray}}
-  <li>
-    <h5>{{this.name}}, {{this.profession}} </h5>
-    <a href="/your-story/{{this._id}}">Read her story</a>
+    <h1>My Stories</h1>
 
-  </li>
+    <a href="/story-add" class="links">Add a Story</a>
+    <hr>
+    <ul>
+      {{#each storyArray}}
+      <li>
+        <h4>{{this.name}}</h4>
+        <h6>{{this.profession}}</h6>
+        <a href="/your-story/{{this._id}}" class="links">Read her Story »</a>
 
-  {{/each}}
-</ul>
+      </li>
+
+      {{/each}}
+    </ul>
+
+
+  </div>
+</div>
