@@ -1,58 +1,134 @@
+@charset "UTF-8";
+@import url(“https://fonts.googleapis.com/css?family=Lato“);
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
 body {
   font-family: "Lato", sans-serif;
-  font-size: 14px; }
+  font-size: 12px;
+}
+
+.enterView {
+  height: 100%;
+}
+
+.body-star {
+  background: url("../images/starbackg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-btn {
+  margin: 20px 10px;
+  color: #fcf8ec;
+  display: block;
+  border-radius: 4px;
+  background-color: #5fa7b3;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  padding: 15px;
+  box-shadow: none;
+}
+
+.centerLog {
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex-wrap: unset;
+}
+
+.bg-100 {
+  height: 100%;
+}
+
+.card {
+  width: 600px;
+  height: 400px;
+  margin: 0 !important;
+}
 
 .my-container {
   margin: 0;
   padding: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
 
 h4 {
-  color: red; }
+  color: black;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
 
 .link-text {
   color: white;
   padding: 8px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .username {
   color: #fcf8ec;
   align-self: center;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 a {
-  color: black; }
+  color: black;
+}
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .justify-content-end {
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .menu-nav {
-  text-align: right; }
+  text-align: right;
+}
 
 .bigcol {
-  margin: 50px; }
+  margin: 50px;
+}
 
 .row-bg {
-  background-color: #233256; }
+  background-color: #233256;
+}
 
 .bigimg {
   height: 550px;
-  object-fit: contain; }
+  object-fit: contain;
+}
 
 .bg-blue {
   background-color: #233256;
-  padding: 2px 16px; }
+  padding: 2px 16px;
+}
 
 .my-form {
   padding: 40px;
   border-radius: 6px;
-  background-color: #fcf8ec; }
+  background-color: #fcf8ec;
+}
 
 label {
-  display: block; }
+  display: block;
+}
 
 input {
   border: 1px solid #cccccc;
@@ -60,7 +136,8 @@ input {
   padding: 6px;
   height: 36px;
   width: 300px;
-  margin: 6px 0; }
+  margin: 6px 0;
+}
 
 .error-message {
   color: #c5352a;
@@ -68,10 +145,12 @@ input {
   border: 1px solid #eec8cb;
   background-color: #f3d8da;
   border-radius: 3px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .button {
   color: #fcf8ec;
@@ -85,41 +164,67 @@ ul {
   padding: 15px;
   margin: auto;
   margin: 24px auto 0;
-  box-shadow: none; }
+  box-shadow: none;
+}
 
-footer {
+.enterButton {
+  color: #fcf8ec;
+  border-radius: 4px;
+  background-color: #5fa7b3;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  padding: 15px;
+  margin: auto;
+  box-shadow: none;
+}
+
+.myFooter {
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px 16px;
   text-align: center;
   color: #b5d3de;
-  background-color: #233256; }
+  background-color: #233256;
+  display: flex;
+  align-items: flex-end;
+}
 
 h2 {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+}
 
 p {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
 
 .mood-grid {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid black;
   margin-right: 0;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .keyword {
   border: 1px solid lightskyblue;
   border-radius: 100px;
-  font-family: BackToBlack; }
+  font-family: BackToBlack;
+}
 
 .key-layout {
   margin: 0px;
   padding: 0px;
-  text-align: center; }
+  text-align: center;
+}
 
 @media (max-width: 576px) {
   .mood-grid {
-    flex-direction: column; } }
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
