@@ -8,6 +8,11 @@ body {
   // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.my-nav-link {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
 .enterView {
   height: 100%;
 }
@@ -207,7 +212,9 @@ p {
   font-size: 12px;
 }
 // Keyword display
-
+.my-nav {
+  margin-bottom: none !important;
+}
 .mood-grid {
   flex-direction: row;
   flex-wrap: wrap;
