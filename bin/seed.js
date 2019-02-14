@@ -21,7 +21,7 @@ const storyData = [
     profession: "Mathematician",
     description:
       "Once upon a time, there was a girl named Ada who loved machines and also the idea of flying. One night Ada went to a ball where she met a grumpy old mathematician named Charles Babbage. Ada was a brilliant mathematician herself. He showed her the Difference Engine, the machine he had invented capable of automatically adding and subtracting numbers. Excited Ada said: 'What if we built a machine that could make more complicated calculations, could play music and show letters and numbers?'. She was describing a computer, way before modern computers were invented! Ada wrote the first computer program in history.",
-    pictureUrl: "",
+    pictureUrl: "./public/images/ada.webp",
     year: "1815",
     country: "United Kingdom",
     quote:
