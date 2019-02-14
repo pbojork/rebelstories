@@ -136,6 +136,9 @@ story-bg {
 .row-bg {
   background-color: #233256; }
 
+.storyform-bkg {
+  background: url("../images/starbackg.jpg") no-repeat center center fixed; }
+
 .bigimg {
   height: 550px;
   object-fit: contain; }
