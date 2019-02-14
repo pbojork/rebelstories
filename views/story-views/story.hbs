@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top shadow my-nav">
   <div class="container">
-    <a class="navbar-brand" href="/"><img src="./images/logo.png" height="65px" /></a>
+    <a class="navbar-brand" href="/"><img src="/images/logo.png" height="65px" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,28 +23,20 @@
   </div>
 </nav>
 
-{{!-- {{#each storyData }} --}}
-<h4>{{storyData.name}}</h4>
-<h5>{{storyData.profession}}</h5>
-<h6>{{storyData.year}}, {{country}}</h6>
-<p>{{storyData.description}}</p>
-<img src="{{storyData.pictureUrl}}" alt="image" />
-<p>{{storyData.quote}}</p>
-
-{{!-- {{/each }} --}}
-
-<a href="/goodnight" class="button">Goodnight</a>
-
 <!-- Page Content -->
-<div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-      <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
-      <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will
-        scroll, but the image will remain in a fixed position!</p>
-      <p class="lead">Scroll down...</p>
-      <div style="height: 700px"></div>
-      <p class="lead mb-0">You've reached the end!</p>
+<div class="container body-star">
+  <div class="border-0 shadow my-card">
+    <div>
+      <h1 class="font-weight-light">{{storyData.name}}</h1>
+      <h4>{{storyData.profession}}</h4>
+      <p>{{storyData.year}} - {{storyData.country}}</p>
+      <p>{{storyData.description}}</p>
+      <img src="{{storyData.pictureUrl}}" alt="{{storyData.name}} image" />
+      <p>{{storyData.quote}}</p>
+      <a href="/goodnight" class="button">Goodnight</a>
+      {{!-- <div style="height: 700px"></div> --}}
+
+      {{!-- <p class="lead mb-0">You've reached the end!</p> --}}
     </div>
   </div>
 </div>

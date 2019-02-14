@@ -4,8 +4,6 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 12px;
-
-  // font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .my-nav-link {
@@ -15,6 +13,15 @@ body {
 
 .enterView {
   height: 100%;
+}
+
+.my-card {
+  width: 90%;
+  height: fit-content;
+  margin: 0 !important;
+  padding: 40px;
+  border-radius: 6px;
+  background-color: white;
 }
 
 .body-star {
@@ -75,11 +82,12 @@ h1 {
   font-size: 30px;
 }
 
-h4 {
-  color: black;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
-}
+// h4 {
+//   color: black;
+//   font-family: "Shrikhand", sans-serif;
+//   font-size: 30px;
+// }
+
 .link-text {
   color: white;
   padding: 8px;
@@ -107,10 +115,6 @@ a:hover {
 .menu-nav {
   text-align: right;
 }
-
-// .collapse-btn {
-//   border: 1px solid #b5d3de;
-// }
 
 .bigcol {
   margin: 50px;
@@ -215,13 +219,10 @@ ul {
 
 //////////////////////////////////////////////////
 
-h2 {
-  margin-bottom: 24px;
-}
 p {
   margin-bottom: 0px;
   font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 }
 // Keyword display
 .my-nav {
