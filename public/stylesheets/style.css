@@ -26,17 +26,23 @@ body {
   justify-content: center; }
 
 .log-btn {
-  margin: 20px 10px;
-  color: #fcf8ec;
+  color: white;
+  font-size: 14px;
+  background-color: #3c5175;
   display: block;
   border-radius: 4px;
-  background-color: #5fa7b3;
   text-align: center;
   text-decoration: none;
   width: 160px;
   height: 50px;
   padding: 15px;
+  margin: 20px 10px;
   box-shadow: none; }
+
+.log-btn:hover,
+.log-btn:active {
+  color: lightblue;
+  text-decoration: none; }
 
 .centerLog {
   align-items: center;
@@ -90,6 +96,11 @@ p {
   font-family: "Shrikhand", sans-serif;
   font-size: 24px;
   color: #3c5075; }
+
+.story-img {
+  object-fit: contain;
+  height: 250px;
+  width: 100%; }
 
 .links {
   color: #6683a3;
@@ -198,6 +209,11 @@ ul {
   box-shadow: none;
   border: none; }
 
+.button:hover,
+.button:active {
+  color: lightblue;
+  text-decoration: none; }
+
 .enterButton {
   color: #fcf8ec;
   border-radius: 4px;
@@ -211,6 +227,7 @@ ul {
   box-shadow: none; }
 
 .myFooter {
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px 16px;
