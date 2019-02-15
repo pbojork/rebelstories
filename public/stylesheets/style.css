@@ -204,7 +204,8 @@ ul {
   width: 160px;
   height: 50px;
   padding: 15px;
-  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
   margin: 18px auto 0;
   box-shadow: none;
   border: none; }
