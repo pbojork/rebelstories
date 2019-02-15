@@ -1,4 +1,4 @@
-@import url(“https://fonts.googleapis.com/css?family=Lato“);
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 .body-star {
-  background: url("../images/starbackg.jpg") no-repeat center center fixed;
+  background: url("/images/starbackg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -72,18 +72,17 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  height: 100vh;
+  //height: 100vh;
 }
 
 ////      Story Pages      ////
 
 .my-card {
-  width: 90%;
   height: fit-content;
   margin: 0 !important;
   padding: 40px;
   border-radius: 6px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 h1 {
   font-family: "Shrikhand", sans-serif;
@@ -116,8 +115,8 @@ p {
 }
 
 .story-img {
-  object-fit: contain;
-  height: 250px;
+  object-fit: cover;
+  height: 500px;
   width: 100%;
   // display: block;
 }
@@ -142,7 +141,7 @@ li {
 }
 
 story-bg {
-  background: url("../images/eufrosina.jpg") no-repeat center center fixed;
+  background: url("/images/eufrosina.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -162,6 +161,7 @@ story-bg {
 .question {
   font-family: "Shrikhand", sans-serif;
   font-size: 40px;
+  text-align: center;
 }
 .questionbox {
   display: inline-block;
@@ -179,11 +179,11 @@ story-bg {
   background-color: #233256;
 }
 .storyform-bkg {
-  background: url("../images/starbackg.jpg") no-repeat center center fixed;
+  background: url("/images/starbackg.jpg") no-repeat center center fixed;
 }
 
 .bigimg {
-  height: 550px;
+  height: 700px;
   object-fit: contain;
 }
 
@@ -238,7 +238,7 @@ ul {
   color: white;
   font-size: 14px;
   background-color: #3c5175;
-  display: block;
+  // display: block;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -287,11 +287,9 @@ ul {
 // Keyword display mood1/2
 
 .mood-grid {
-  flex-direction: row;
+  margin: 0 170px;
+  display: flex;
   flex-wrap: wrap;
-
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .keyword {
@@ -306,9 +304,7 @@ ul {
 }
 
 .key-layout {
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+  margin: 20px 0;
 }
 
 .cercle-text {
@@ -328,8 +324,44 @@ ul {
   }
 }
 
-@media (max-width: 576px) {
-  .mood-grid {
-    flex-direction: column;
+@media (max-width: 776px) {
+  .containerFixed2 {
+    height: auto !important;
   }
+  .bigcol {
+    margin: 50px;
+  }
+}
+
+.onepeopleName {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.secondcard {
+  padding: 40px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 991px) {
+  .onepeopleContent,
+  .topContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topContent {
+    margin-top: 30px;
+  }
+}
+
+.onestoryContainer {
+  padding: 50px;
+}
+
+.containerFixed {
+  height: 100vh;
 }
