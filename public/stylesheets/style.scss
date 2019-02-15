@@ -32,17 +32,24 @@ body {
 }
 
 .log-btn {
-  margin: 20px 10px;
-  color: #fcf8ec;
+  color: white;
+  font-size: 14px;
+  background-color: #3c5175;
   display: block;
   border-radius: 4px;
-  background-color: #5fa7b3;
   text-align: center;
   text-decoration: none;
   width: 160px;
   height: 50px;
   padding: 15px;
+  margin: 20px 10px;
   box-shadow: none;
+}
+
+.log-btn:hover,
+.log-btn:active {
+  color: lightblue;
+  text-decoration: none;
 }
 
 .centerLog {
@@ -108,8 +115,12 @@ p {
   color: #3c5075;
 }
 
-// story-img {
-// }
+.story-img {
+  object-fit: contain;
+  height: 250px;
+  width: 100%;
+  // display: block;
+}
 
 .links {
   color: #6683a3;
@@ -155,14 +166,6 @@ story-bg {
 .questionbox {
   display: inline-block;
 }
-
-// a {
-//   color: black;
-// }
-
-// a:hover {
-//   text-decoration: none;
-// }
 
 .justify-content-end {
   justify-content: flex-end;
@@ -248,6 +251,12 @@ ul {
   border: none;
 }
 
+.button:hover,
+.button:active {
+  color: lightblue;
+  text-decoration: none;
+}
+
 .enterButton {
   color: #fcf8ec;
   border-radius: 4px;
@@ -262,6 +271,7 @@ ul {
 }
 
 .myFooter {
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 20px 16px;

@@ -3,7 +3,7 @@
 <!-- Page Content -->
 <div class="container body-star">
   <div class="border-0 shadow my-card">
-    <div class="">
+    <div>
       <div>
         <h1 class="font-weight-light">{{storyData.name}}</h1>
         <h5>{{storyData.profession}}</h5>
@@ -11,8 +11,8 @@
         <p>{{storyData.description}}</p>
         <h5 class="quote">" {{storyData.quote}} "</h5>
       </div>
-      <div class="">
-        {{!-- <img src="{{storyData.pictureUrl}}" alt="{{storyData.name}} image" class="" /> --}}
+      <div class="d-flex justify-content-center">
+        <img src="{{storyData.pictureUrl}}" alt="{{storyData.name}} image" class=" img-fluid story-img" />
       </div>
       <a href="/goodnight" class="button">Goodnight</a>
     </div>
@@ -21,4 +21,7 @@
     {{!-- <p class="lead mb-0">You've reached the end!</p> --}}
   </div>
 </div>
+</div>
+<div>
+  {{> footer}}
 </div>
