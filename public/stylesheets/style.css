@@ -142,6 +142,9 @@ story-bg {
 .bigcol {
   margin: 50px; }
 
+.moodcol {
+  margin: 50px 0px; }
+
 .row-bg {
   background-color: #233256; }
 
@@ -149,7 +152,7 @@ story-bg {
   background: url("/images/starbackg.jpg") no-repeat center center fixed; }
 
 .bigimg {
-  height: 700px;
+  height: 550px;
   object-fit: contain; }
 
 .my-form {
@@ -235,7 +238,6 @@ ul {
   align-items: flex-end; }
 
 .mood-grid {
-  margin: 0 170px;
   display: flex;
   flex-wrap: wrap; }
 
@@ -266,7 +268,9 @@ ul {
   .containerFixed2 {
     height: auto !important; }
   .bigcol {
-    margin: 50px; } }
+    margin: 50px; }
+  .moodcol {
+    margin: 50px 0px; } }
 
 .onepeopleName {
   text-align: center;
@@ -284,6 +288,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .moodcol {
+    margin: 50px 0px; }
   .topContent {
     margin-top: 30px; } }
 
